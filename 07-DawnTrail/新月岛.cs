@@ -16,47 +16,18 @@ using System.Runtime.Intrinsics.Arm;
 
 namespace LuoChen_Kodakku._07_DawnTrail
 {
-    /// <summary>
-    /// name and version affect the script name and version number displayed in the user interface.
-    /// territorys specifies the regions where this trigger is effective. If left empty, it will be effective in all regions.
-    /// Classes with the same GUID will be considered the same trigger. Please ensure your GUID is unique and does not conflict with others.
-    /// </summary>
     [ScriptType(name: "新月岛", territorys: [1252], guid: "5ec11a8a-ca58-49c3-8f5d-be6a2a1782f6", version: "0.0.0.1",
-        author: "LuoChen", note: noteStr, updateInfo: updateInfoStr)]
+        author: "LuoChen", note: noteStr)]
     public class 新月岛CE
     {
         const string noteStr =
             """
             画着玩玩
             """;
-
-        const string updateInfoStr =
-            """
-            这里是更新信息.
-            他有多行显示.
-            请在这里放置你的更新信息
-            """;
-
-        /// <summary>
-        /// note will be displayed to the user as a tooltip.
-        /// </summary>
-
-        
         [UserSetting("DebugMode")] public bool debugMode { get; set; } = true;
-
-        int n = 0;
-
-
-
-
-        /// <summary>
-        /// This method is called at the start of each battle reset.
-        /// If this method is not defined, the program will execute an empty method.
-        /// </summary>
         public void Init(ScriptAccessory accessory)
         {
             _spinningSiegeCount = [];
-            n = 0;
         }
 
         public void DebugMsg(string str, ScriptAccessory accessory)
