@@ -1,0 +1,15 @@
+[
+    {
+      "Name": "新月岛CE",
+      "Guid": "5ec11a8a-ca58-49c3-8f5d-be6a2a1782f6",
+      "Version": "0.0.0.1",
+      "Author": "LuoChen",
+      "Repo": "",
+      "DownloadUrl": "https://raw.githubusercontent.com/LuoChen-LC/LuoChenKodakku/refs/heads/main/07-DawnTrail/新月岛.cs",
+      "Note": "",
+      "UpdateInfo": "",
+      "TerritoryIds": [
+        1252
+      ]
+    }
+  ]
